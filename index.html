@@ -66,6 +66,50 @@
 				<code class="content-box__code">git clone example.com/url/to/remote/repository</code>
 				<p class="content-box__paragraph">Create a local copy of another repository, in the current directory.</p>
 			</div>
+			<div class="content-box content-box--margin-elements">
+				<h2 class="content-box__title">Committing changes</h2>
+
+				<p class="content-box__paragraph content-box__paragraph--bigger"><span class="content-box__special">add</span> - Add files to the staging area.</p>
+
+				<code class="content-box__code">git add example.txt another_example.txt</code>
+				<p class="content-box__paragraph">Add the specified files to the staging area.</p>
+
+				<code class="content-box__code">git add example_directory</code>
+				<p class="content-box__paragraph">Add all files in the specified directory to the staging area.</p>
+
+				<code class="content-box__code">git add .</code>
+				<p class="content-box__paragraph">Add all files in the current directory to the staging area.</p>
+
+				<p class="content-box__paragraph content-box__paragraph--bigger"><span class="content-box__special">rm</span> - Remove files from the repository.</p>
+
+				<code class="content-box__code">git rm example.txt another_example.txt</code>
+				<p class="content-box__paragraph">Delete the specified files from the disk and add their removal to the staging area.</p>
+
+				<code class="content-box__code">git rm --cached example.txt</code>
+				<p class="content-box__paragraph">Remove the specified files from the staging area without deleting them from the disk.</p>
+
+				<code class="content-box__code">git rm -r example_directory another_directory</code>
+				<p class="content-box__paragraph">Delete the specified directories from the disk and add their removal to the staging area.</p>
+
+				<p class="content-box__paragraph content-box__paragraph--bigger"><span class="content-box__special">mv</span> - Move files.</p>
+
+				<code class="content-box__code">git mv /old/path/file.txt /new/path/file.txt</code>
+				<p class="content-box__paragraph">Moves a file from a source path to a destination path and adds the change to the staging area.</p>
+
+				<p class="content-box__paragraph content-box__paragraph--bigger"><span class="content-box__special">commit</span> - Commit the changes in the stage area.</p>
+
+				<code class="content-box__code">git commit</code>
+				<p class="content-box__paragraph">Commit the changes of the staging area (the text editor will open to choose the commit message).</p>
+
+				<code class="content-box__code">git commit -m "Commit message"</code>
+				<p class="content-box__paragraph">Commit the changes of the staging area and choose the commit message without using an external text editor.</p>
+
+				<code class="content-box__code">git commit --amend</code>
+				<p class="content-box__paragraph">Replace the last commit with the new changes in the staging area (the text editor will open to choose the commit message).</p>
+
+				<code class="content-box__code">git commit --amend --no-edit</code>
+				<p class="content-box__paragraph">Replace the last commit with the new changes in the staging area and keep the same commit message.</p>
+			</div>
 		</main>
 		<footer class="footer">
 			<p class="footer__message">GitHub repository at <a class="footer__link" href="https://github.com/Krazune/Git-Quick-Recap">Krazune/Git-Quick-Recap</a>.</p>
