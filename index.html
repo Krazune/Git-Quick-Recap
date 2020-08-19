@@ -178,6 +178,38 @@
 				<p class="content-box__paragraph">Remove all entries on the stash.</p>
 			</div>
 			<div class="content-box content-box--margin-elements">
+				<h2 class="content-box__title">Undoing and moving changes</h2>
+
+				<p class="content-box__paragraph content-box__paragraph--bigger"><span class="content-box__special">reset</span> - Reset the state of the current branch HEAD.</p>
+
+				<code class="content-box__code">git reset HEAD~30</code>
+				<p class="content-box__paragraph">Reset the current branch HEAD to the specified commit.</p>
+
+				<code class="content-box__code">git reset --soft</code>
+				<p class="content-box__paragraph">Reset the current branch HEAD to the last commit and preserve the files in disk.</p>
+
+				<code class="content-box__code">git reset --hard</code>
+				<p class="content-box__paragraph">Reset the current branch HEAD to the last commit and delete the files in disk.</p>
+
+				<p class="content-box__paragraph content-box__paragraph--bigger"><span class="content-box__special">revert</span> - Revert commits.</p>
+
+				<code class="content-box__code">git revert HEAD^</code>
+				<p class="content-box__paragraph">Create a new commit, reverting the changes made by the commits since the specified commit.</p>
+
+				<p class="content-box__paragraph content-box__paragraph--bigger"><span class="content-box__special">cherry-pick</span> - Pick and move commits.</p>
+
+				<code class="content-box__code">git cherry-pick a9eb85 f4be04 6cfa6</code>
+				<p class="content-box__paragraph">Pick the specified commits and create a new commit for each at the current commit.</p>
+
+				<p class="content-box__paragraph content-box__paragraph--bigger"><span class="content-box__special">rebase</span> - Move commits to a new base commit.</p>
+
+				<code class="content-box__code">git commit new_base_commit</code>
+				<p class="content-box__paragraph">Move all changes of the current branch, since the common ancestor, to the new base commit.</p>
+
+				<code class="content-box__code">git -i commit new_base_commit</code>
+				<p class="content-box__paragraph">Perform an interactive rebase to the new base commit.</p>
+			</div>
+			<div class="content-box content-box--margin-elements">
 				<h2 class="content-box__title">Inspecting the repository</h2>
 
 				<p class="content-box__paragraph content-box__paragraph--bigger"><span class="content-box__special">status</span> - Display information about the state of the repository.</p>
