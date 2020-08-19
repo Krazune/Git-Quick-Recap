@@ -37,14 +37,22 @@
 
 .main
 {
+	width: 700px; /* TEMPORARY */
 	grid-area: main;
 	display: flex;
 	flex-direction: column;
 }
 
+@media screen and (max-width: 750px)
+{
+	.main--narrow-screen
+	{
+		width: 90%;
+	}
+}
+
 .content-box
 {
-	width: 700px; /* TEMPORARY */
 	padding: 20px;
 	background-color: #FAFAFA;
 	border-radius: 3px;
