@@ -210,6 +210,59 @@
 				<p class="content-box__paragraph">Perform an interactive rebase to the new base commit.</p>
 			</div>
 			<div class="content-box content-box--margin-elements">
+				<h2 class="content-box__title">Updating the repository</h2>
+
+				<p class="content-box__paragraph content-box__paragraph--bigger"><span class="content-box__special">remote</span> - Manage the remotes.</p>
+
+				<code class="content-box__code">git remote</code>
+				<p class="content-box__paragraph">Display the remotes list.</p>
+
+				<code class="content-box__code">git remote show example_remote</code>
+				<p class="content-box__paragraph">Display information about the specified remote.</p>
+
+				<code class="content-box__code">git remote add example_remote example.com/path/to/remote/repository</code>
+				<p class="content-box__paragraph">Add a new remote.</p>
+
+				<code class="content-box__code">git remote rename example_remote new_remote_name</code>
+				<p class="content-box__paragraph">Rename the specified remote.</p>
+
+				<code class="content-box__code">git remote remove example_remote</code>
+				<p class="content-box__paragraph">Remove the specified remote.</p>
+
+				<p class="content-box__paragraph content-box__paragraph--bigger"><span class="content-box__special">fetch</span> - Update the local remote-tracking branches.</p>
+
+				<code class="content-box__code">git fetch remote_name</code>
+				<p class="content-box__paragraph">Fetch the changes from the remote to the local remote-tracking branches.</p>
+
+				<code class="content-box__code">git fetch remote_name branch_name</code>
+				<p class="content-box__paragraph">Fetch the changes of the specified branch from the remote, to the local remote-tracking branch.</p>
+
+				<code class="content-box__code">git fetch remote_name tag_name</code>
+				<p class="content-box__paragraph">Fetch the changes of the specified tag from the remote, to the local remote-tracking branch.</p>
+
+				<p class="content-box__paragraph content-box__paragraph--bigger"><span class="content-box__special">pull</span> - Integrate the remote changes.</p>
+
+				<code class="content-box__code">git pull remote_name</code>
+				<p class="content-box__paragraph">Fetch the changes from the remote to the local remote-tracking branches, and merge the current branch with the respective local remote-tracking branch.</p>
+
+				<code class="content-box__code">git pull --rebase remote_name</code>
+				<p class="content-box__paragraph">Fetch the changes from the remote to the local remote-tracking branches, and rebase the local changes of the current branch to its new tip.</p>
+
+				<p class="content-box__paragraph content-box__paragraph--bigger"><span class="content-box__special">push</span> - Send the local changes to the remote.</p>
+
+				<code class="content-box__code">git push remote_name</code>
+				<p class="content-box__paragraph">Send the changes of the current branch to the remote.</p>
+
+				<code class="content-box__code">git push remote_name branch_name</code>
+				<p class="content-box__paragraph">Send the changes of the specified branch to the remote.</p>
+
+				<code class="content-box__code">git push remote_name tag_name</code>
+				<p class="content-box__paragraph">Send the changes of the specified tag to the remote.</p>
+
+				<code class="content-box__code">git push --all remote_name</code>
+				<p class="content-box__paragraph">Send the changes of all branches to the remote.</p>
+			</div>
+			<div class="content-box content-box--margin-elements">
 				<h2 class="content-box__title">Inspecting the repository</h2>
 
 				<p class="content-box__paragraph content-box__paragraph--bigger"><span class="content-box__special">status</span> - Display information about the state of the repository.</p>
