@@ -110,6 +110,73 @@
 				<code class="content-box__code">git commit --amend --no-edit</code>
 				<p class="content-box__paragraph">Replace the last commit with the new changes in the staging area and keep the same commit message.</p>
 			</div>
+			<div class="content-box content-box--margin-elements">
+				<h2 class="content-box__title">Branching and merging</h2>
+
+				<p class="content-box__paragraph content-box__paragraph--bigger"><span class="content-box__special">branch</span> - Manage the repository branches.</p>
+
+				<code class="content-box__code">git branch</code>
+				<p class="content-box__paragraph">List the local branches.</p>
+
+				<code class="content-box__code">git branch -a</code>
+				<p class="content-box__paragraph">List the local and the remote-tracking branches.</p>
+
+				<code class="content-box__code">git branch new_branch</code>
+				<p class="content-box__paragraph">Create a new branch at the current commit.</p>
+
+				<code class="content-box__code">git branch -d example_branch</code>
+				<p class="content-box__paragraph">Delete a branch.</p>
+
+				<p class="content-box__paragraph content-box__paragraph--bigger"><span class="content-box__special">checkout</span> - Switch branches.</p>
+
+				<code class="content-box__code">git checkout branch_name</code>
+				<p class="content-box__paragraph">Switch to specified branch.</p>
+
+				<code class="content-box__code">git checkout -b new_branch_name</code>
+				<p class="content-box__paragraph">Create a new branch, and switch to it.</p>
+
+				<p class="content-box__paragraph content-box__paragraph--bigger"><span class="content-box__special">merge</span> - Merge multiple branches.</p>
+
+				<code class="content-box__code">git merge branch_name</code>
+				<p class="content-box__paragraph">Merge the specified branch into the current branch.</p>
+
+				<code class="content-box__code">git merge --no-ff branch_name</code>
+				<p class="content-box__paragraph">Merge the specified branch into the current branch, without fast forwarding.</p>
+
+				<p class="content-box__paragraph content-box__paragraph--bigger"><span class="content-box__special">tag</span> - Manage git tags.</p>
+
+				<code class="content-box__code">git tag</code>
+				<p class="content-box__paragraph">List tags.</p>
+
+				<code class="content-box__code">git tag v3.5</code>
+				<p class="content-box__paragraph">Tag the current commit.</p>
+
+				<code class="content-box__code">git tag -a v7.0 -m "Software version 7.0"</code>
+				<p class="content-box__paragraph">Tag the current commit and add a message to it.</p>
+
+				<p class="content-box__paragraph content-box__paragraph--bigger"><span class="content-box__special">stash</span> - Manage the stash.</p>
+
+				<code class="content-box__code">git stash list</code>
+				<p class="content-box__paragraph">Display the entries on the stash.</p>
+
+				<code class="content-box__code">git stash</code>
+				<p class="content-box__paragraph">Move the changes to files, and staging area, to the stash.</p>
+
+				<code class="content-box__code">git stash apply</code>
+				<p class="content-box__paragraph">Apply the most recent entry on the stash.</p>
+
+				<code class="content-box__code">git stash apply stash@{2}</code>
+				<p class="content-box__paragraph">Apply the specified entry on the stash.</p>
+
+				<code class="content-box__code">git stash pop</code>
+				<p class="content-box__paragraph">Apply the most recent entry on the stash, and remove it from the stash.</p>
+
+				<code class="content-box__code">git stash drop</code>
+				<p class="content-box__paragraph">Remove the most recent entry on the stash.</p>
+
+				<code class="content-box__code">git stash clear</code>
+				<p class="content-box__paragraph">Remove all entries on the stash.</p>
+			</div>
 		</main>
 		<footer class="footer">
 			<p class="footer__message">GitHub repository at <a class="footer__link" href="https://github.com/Krazune/Git-Quick-Recap">Krazune/Git-Quick-Recap</a>.</p>
